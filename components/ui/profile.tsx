@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input'
 import { toast } from 'sonner'
 
 // Icons
-import { Eye, EyeOff, Lock, User } from 'lucide-react'
+import { Eye, EyeOff, Lock, Mail, User, UserCheck } from 'lucide-react'
 
 export const Profile = ({ loading }: { loading: boolean }) => {
   const [showRepeatPassword, setShowRepeatPassword] = useState<boolean>(false)
@@ -23,15 +23,15 @@ export const Profile = ({ loading }: { loading: boolean }) => {
     e.preventDefault()
     setError(null)
 
-    if(name === "" || surname === "" || email === "" || password === "" || repeatPassword === "") 
+    if (name === "" || surname === "" || email === "" || password === "" || repeatPassword === "")
       return toast.error("Please fill in all fields", { className: "!text-red-600" })
 
     if (password !== repeatPassword) {
-      toast.error("Passwords do not match", {className:"!text-red-600"})
+      toast.error("Passwords do not match", { className: "!text-red-600" })
       return
     }
 
-    toast.success("Profile updated successfully", {className:"!text-green-600"})
+    toast.success("Profile updated successfully", { className: "!text-green-600" })
     setTimeout(() => {
       window.location.reload();
     }, 1000)
@@ -67,7 +67,7 @@ export const Profile = ({ loading }: { loading: boolean }) => {
             value={surname}
             className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
           />
-          <User className="size-5 absolute right-4 top-1/2 -translate-y-1/2 text-black dark:text-white" />
+          <UserCheck className="size-5 absolute right-4 top-1/2 -translate-y-1/2 text-black dark:text-white" />
         </div>
       </div>
 
@@ -80,7 +80,7 @@ export const Profile = ({ loading }: { loading: boolean }) => {
           value={email}
           className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
         />
-        <User className="size-5 absolute right-4 top-1/2 -translate-y-1/2 text-black dark:text-white" />
+        <Mail className="size-5 absolute right-4 top-1/2 -translate-y-1/2 text-black dark:text-white" />
       </div>
 
       {/* Password */}
