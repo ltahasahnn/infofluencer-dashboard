@@ -73,7 +73,7 @@ export default function Home() {
           }
         </div>
 
-        <div className="flex items-center justify-between text-sm">
+        <div className="flex items-center justify-between sm:text-sm text-xs flex-wrap">
           <div className="flex items-center gap-2">
             <Checkbox id="toggle" />
             <Label htmlFor="toggle">Remember Me</Label>
