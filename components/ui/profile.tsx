@@ -40,12 +40,11 @@ export const Profile = ({ loading }: { loading: boolean }) => {
   return (
     <form
       onSubmit={handleSave}
-      className="backdrop-blur-xl rounded-2xl border border-black/25 dark:border-white/25 px-8 pb-8 pt-12 w-full max-w-xl flex flex-col gap-6
-                 bg-white dark:bg-black text-black dark:text-white m-auto"
+      className="backdrop-blur-xl rounded-2xl border border-black/25 dark:border-white/25 sm:px-8 px-4 pb-8 pt-12 w-full max-w-xl flex flex-col sm:gap-4 gap-3 bg-white dark:bg-black text-black dark:text-white m-auto max-sm:text-sm"
     >
-      <span className="font-bold text-4xl text-center text-black dark:text-white">Profile Settings</span>
+      <span className="font-bold text-4xl text-center text-black dark:text-white mb-4">Profile Settings</span>
 
-      <div className='grid grid-cols-2 gap-4'>
+      <div className='grid grid-cols-2 sm:gap-4 gap-3'>
         <div className="relative">
           <Input
             placeholder="Name"
@@ -53,7 +52,7 @@ export const Profile = ({ loading }: { loading: boolean }) => {
             id="name"
             onChange={(e) => setName(e.target.value)}
             value={name}
-            className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
+            className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500 max-sm:text-sm"
           />
           <User className="size-5 absolute right-4 top-1/2 -translate-y-1/2 text-black dark:text-white" />
         </div>
@@ -65,7 +64,7 @@ export const Profile = ({ loading }: { loading: boolean }) => {
             id="surname"
             onChange={(e) => setSurname(e.target.value)}
             value={surname}
-            className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
+            className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500 max-sm:text-sm"
           />
           <UserCheck className="size-5 absolute right-4 top-1/2 -translate-y-1/2 text-black dark:text-white" />
         </div>
@@ -78,7 +77,7 @@ export const Profile = ({ loading }: { loading: boolean }) => {
           id="email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
-          className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
+          className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500 max-sm:text-sm"
         />
         <Mail className="size-5 absolute right-4 top-1/2 -translate-y-1/2 text-black dark:text-white" />
       </div>
@@ -92,7 +91,7 @@ export const Profile = ({ loading }: { loading: boolean }) => {
           id="password"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
-          className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
+          className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500 max-sm:text-sm"
         />
         {password.length > 0 ? (
           <div
@@ -115,7 +114,7 @@ export const Profile = ({ loading }: { loading: boolean }) => {
           id="repeatPassword"
           onChange={(e) => setRepeatPassword(e.target.value)}
           value={repeatPassword}
-          className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
+          className="pr-10 bg-white dark:bg-black text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500 max-sm:text-sm"
         />
         {repeatPassword.length > 0 ? (
           <div
