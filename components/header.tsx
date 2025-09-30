@@ -19,27 +19,29 @@ export const Header = ({ loading }: { loading: boolean }) => {
         <div className='flex items-center gap-2 text-nowrap'>
           <DarkMode loading={!loading} />
 
-          <Tooltip>
-            <TooltipTrigger>
-              <a href="/profile" className="flex items-center gap-2">
-                <Avatar>
-                  <AvatarImage src="" />
-                  <AvatarFallback className="uppercase font-bold text-sm">
-                    TS
-                  </AvatarFallback>
-                </Avatar>
-                <div className="flex flex-col items-start -space-y-0.5 capitalize">
-                  <span className="font-semibold line-clamp-1 text-xs">
-                    Taha Şahin
-                  </span>
-                  <p className="!text-[10px] line-clamp-1">Administrator</p>
-                </div>
-              </a>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Go to profile</p>
-            </TooltipContent>
-          </Tooltip>
+          <div className='max-sm:hidden'>
+            <Tooltip>
+              <TooltipTrigger>
+                <a href="/profile" className="flex items-center gap-2">
+                  <Avatar>
+                    <AvatarImage src="" />
+                    <AvatarFallback className="uppercase font-bold text-sm">
+                      TS
+                    </AvatarFallback>
+                  </Avatar>
+                  <div className="flex flex-col items-start -space-y-0.5 capitalize">
+                    <span className="font-semibold line-clamp-1 text-xs">
+                      Taha Şahin
+                    </span>
+                    <p className="!text-[10px] line-clamp-1">Administrator</p>
+                  </div>
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Go to profile</p>
+              </TooltipContent>
+            </Tooltip>
+          </div>
         </div>
       </div>
     </header>

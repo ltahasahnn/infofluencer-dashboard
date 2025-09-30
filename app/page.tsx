@@ -52,9 +52,9 @@ export default function Home() {
   }
 
   return (
-    <main className="flex h-dvh items-center justify-center relative">
+    <main className="flex h-dvh items-center justify-center relative p-4">
       <div className="absolute size-full inset-0 bg-[url('/assets/images/background.webp')] bg-cover bg-center brightness-60"></div>
-      <form onSubmit={handleForm} className="backdrop-blur-xl rounded-2xl border border-white/25 px-8 pb-8 pt-12 w-full max-w-md flex flex-col gap-6 text-white">
+      <form onSubmit={handleForm} className="backdrop-blur-xl rounded-2xl border border-white/25 px-8 pb-8 pt-12 w-full max-w-md flex flex-col gap-6 text-white max-sm:text-sm">
         <span className="font-bold text-4xl text-center text-white">Login</span>
 
         <div className="relative">
