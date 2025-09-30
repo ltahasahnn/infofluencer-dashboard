@@ -22,7 +22,7 @@
 
 ## Tasarım Tercihleri
 
-1. Login sayfasında resmi ve göz alıcı bir görünüm kullandım; diğer sayfalar daha klasik ve sade.  
+1. Login sayfası sade ve profesyonel bir görünümde; diğer sayfalar klasik ve basit.
 2. Renk paletinde aşırıya kaçmadan standart ve gözü yormayan tonlar tercih edildi.  
 3. UI bileşenleri minimalist ve işlevsel olacak şekilde düzenlendi; kullanıcı deneyimi ön planda tutuldu.  
 
